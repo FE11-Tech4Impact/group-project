@@ -60,3 +60,4 @@ loadMoreButton.addEventListener("click", function (event) {
 
 // Menambahkan event listener pada saat ukuran layar browser berubah untuk mengatur ulang jumlah postingan yang ditampilkan
 window.addEventListener("resize", setPostsPerPage);
+
