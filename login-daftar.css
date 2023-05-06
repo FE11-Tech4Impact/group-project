@@ -1,0 +1,182 @@
+:root{
+    --primary-color: #000;
+    --bg: #fff;
+    --blue: #007bff; 
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #077252;
+    --teal: #29b27f;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #070717;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa; 
+    --dark: #343a40;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background: var(--bg);
+    font-family: 'Inter', sans-serif;
+    color: solid black;
+    padding: 0 7.5rem;
+}
+
+body a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+/* Navbar */
+
+.navbar-action-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 144px;
+    height: 48px;
+    margin: 0 1rem;
+    font-weight: 600;
+    color: var(--teal);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.navbar-action-item:hover{
+    color: var(--teal);
+    border-color: var(--green);
+}
+.btn-primary
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 48px;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0;
+    font-weight: 600;
+    background-color: var(--teal);
+    color: var(--white);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+}
+
+.btn-primary:hover{
+    border: 2px solid var(--green);
+    background-color: var(--green);
+}
+
+.icon-menu{
+    display: flex;
+    margin: 0 0.8rem;
+    align-items: center;
+    transition: 0.3s ease;
+    color: var(--gray-dark);
+}
+
+.icon-menu:hover{
+    color: var(--teal);
+    transition: 0.3s ease;
+}
+
+/* Register */
+.form-daftar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+}
+
+
+.form-daftar h3{
+    font-size: 24px;
+    color: #121212;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.form-control{
+    height: 40px;
+}
+
+/* Login */
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.form-control{
+    height: 40px;
+}
+
+.form-login h3{
+    font-size: 24px;
+    color: #121212;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.button-form{
+    width: 100%;
+    height: 40px;
+    background-color: #00A376;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-social{
+    margin: 4px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-social img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* End Login */
