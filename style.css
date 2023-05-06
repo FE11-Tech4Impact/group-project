@@ -1,0 +1,1194 @@
+:root{
+    --primary-color: #000;
+    --bg: #fff;
+    --blue: #007bff; 
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #077252;
+    --teal: #29b27f;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #070717;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa; 
+    --dark: #343a40;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background: var(--bg);
+    font-family: 'Inter', sans-serif;
+    color: solid black;
+    padding: 0 7.5rem;
+}
+
+body a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+/* Navbar */
+
+.navbar-action-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 144px;
+    height: 48px;
+    margin: 0 1rem;
+    font-weight: 600;
+    color: var(--teal);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.navbar-action-item:hover{
+    color: var(--teal);
+    border-color: var(--green);
+}
+.btn-primary
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 48px;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0;
+    font-weight: 600;
+    background-color: var(--teal);
+    color: var(--white);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+}
+
+.btn-primary:hover{
+    border: 2px solid var(--green);
+    background-color: var(--green);
+}
+
+.icon-menu{
+    display: flex;
+    margin: 0 0.8rem;
+    align-items: center;
+    transition: 0.3s ease;
+    color: var(--gray-dark);
+}
+
+.icon-menu:hover{
+    color: var(--teal);
+    transition: 0.3s ease;
+}
+
+
+
+
+/* Hero Image */
+
+.hero{
+    margin-top: 3rem;
+    background: url('image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: start;
+    padding: 3.5rem 2rem;
+}
+
+.hero .hero-content{
+    color: var(--white);
+}
+
+.hero-content h4{
+    width: 70%;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    text-shadow: 11 3px rgba(1,1,3,0.5);
+}
+
+
+.hero-content h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+    line-height: 32px;
+    text-shadow: 1 1 3px rgba(1,1,3,0.5);
+}
+
+
+.hero-content .hero-action-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.2rem;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 198px;
+    height: 48px;
+    color: var(--teal);
+    transition: all 0.3s ease;
+    border: 1px solid var(--white);
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    background-color: var(--white);
+}
+
+.hero-content .hero-action-item:hover{
+    background: var(--teal);
+    color: var(--white);
+}
+
+
+/* Daftar Penyakit */
+
+.penyakit{
+    margin-top: 120px;
+    padding: 1.5 rem 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.penyakit .penyakit-content{
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.penyakit .penyakit-content h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+}
+
+.penyakit .penyakit-content .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    transition: all 0.3s ease;
+    padding: 8px;
+    width: 198px;
+    height: 48px;
+    border: 1px solid var(--teal);
+    border-radius: 12px;
+    background-color: var(--teal);
+    cursor: pointer;
+}
+
+.penyakit .penyakit-content .button:hover{
+    background: var(--white);
+    color: var(--teal);
+}
+
+.penyakit .daftar-penyakit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap ;
+    gap: 1.5rem;
+}
+
+.penyakit .daftar-penyakit .penyakit-item{
+    width: 100%;
+    height: 9.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.penyakit .daftar-penyakit .penyakit-item .penyakit-item-content{
+    width: 160px;
+    height: 150px;
+    border: 1px solid rgb(223, 222, 222);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;   
+    align-items: center; 
+    cursor: pointer;
+}
+
+.penyakit-item-content .gambar-penyakit{
+    margin-bottom: 1rem;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.penyakit-item-content .penyakit-item-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-dark);
+    
+}
+
+.penyakit-item-content:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+/* Dokter Rekomendasi */
+.dokter-rekomendasi{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 18px;
+    background: url('https://lh3.googleusercontent.com/pw/AMWts8CjhmcbQCxQH-RrDzcWI93V4MI9U-QIB4WCbUUzx1o_j0RM4RErYLHR7DeEtZLGt6dxVflk5VzgN5pCSI5APLuV8aGhKPvOaLDYIANqbRVZv90QqwxmIk2Ia7kRjbw5ctOO-jcLvR9swM5muOliVSFu=w837-h568-s-no?authuser=0');
+    background-size: cover;
+}
+
+.dokter-rekomendasi .dokter-rekomendasi-title h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 2.5rem;
+    display: flex;
+
+}
+.dokter-rekomendasi .dokter-rekomendasi-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0;
+    gap: 16.6px;
+    justify-content: flex-start;
+}
+.dokter-rekomendasi .dokter-rekomendasi-content .card{
+    background-color:white;
+    margin-right: 1.5rem;
+    width: 15rem;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.card:hover {
+    transition: 0.3s;
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+  }
+.dokter-rekomendasi-content .card .card-img{
+    margin-left: 0%;
+    margin-top: 0%;
+    width: 13rem;
+    height: 11rem;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 0%;
+    margin-bottom: 1rem;
+}
+.dokter-rekomendasi-content .card .card-nama{
+    margin-top: 0%;
+
+}
+.dokter-rekomendasi-content .card .card-nama h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+}
+
+.dokter-rekomendasi-content .card .card-nama p{
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-dark);
+}
+
+.dokter-rekomendasi-content .card .card-icon {
+    width: 13rem;
+    margin-top: 8px;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+
+}
+
+.dokter-rekomendasi-content .card .card-icon .card-icon-item{
+    width: 35%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.dokter-rekomendasi-content .card .card-icon .card-icon-item .star i{
+    max-width: 30px;
+    max-height: 30px;
+    color: var(--warning);
+    margin-right: 8px;
+}
+.dokter-rekomendasi-content .card .card-icon .card-icon-item .bag i{
+    max-width: 30px;
+    margin-right: 8px;
+    max-height: 30px;
+    color: var(--teal)
+}
+
+.dokter-rekomendasi-content .card .card-icon .card-icon-item p{
+    position: relative;
+    top: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(94, 92, 92);
+}
+
+.dokter-rekomendasi-content .card .card-icon .card-icon-item p span{
+    font-weight: 600;
+}
+
+.dokter-rekomendasi-content .card .card-ket{
+    margin-top: 1rem;
+    width: 100%;
+    height: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+
+.dokter-rekomendasi-content .card .card-ket .card-ket-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+}
+
+.dokter-rekomendasi-content .card .card-ket-item2{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dokter-rekomendasi-content .card .card-ket .card-ket-item p{
+    margin-right: 8px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--gray-dark);
+    position: relative;
+    top: 8px;
+}
+
+.dokter-rekomendasi-content .card .card-ket .card-ket-item h4{
+    position: relative;
+    top: 4.5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color:#F58736;
+}
+
+.dokter-rekomendasi-content .card .card-ket-item2 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 198px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    transition: all 0.3s ease;
+    padding: 8px;
+    border: 1px solid var(--teal);
+    border-radius: 12px;
+    text-align: center;
+    background-color: var(--teal);
+}
+
+.dokter-rekomendasi-content .card .card-ket-item2 a:hover{
+    background-color: var(--white);
+    color: var(--teal);
+    transition: 0.3s;
+}
+
+
+/* Testimonial */
+
+
+.daftar-testimoni{
+    margin-top: 120px;
+    padding: 1.4 rem 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.daftar-testimoni .testimoni-content{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daftar-testimoni .testimoni-content h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+}
+
+.daftar-testimoni .testimoni-content .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 198px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    transition: all 0.3s ease;
+    padding: 8px;
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.daftar-testimoni .testimoni-content .button:hover{
+    background: var(--white);
+    color: var(--teal);
+}
+
+.testimoni{
+    margin-top: 2.5rem;
+    height: autorem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.testimoni .card-testimoni {
+    background-color: white;
+    width: 31%;
+    height: auto;
+    border: 1px solid rgb(223, 222, 222);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: flex-start; 
+    cursor: pointer; 
+    padding: 1.5rem;
+  }
+  
+    .card-testimoni:hover {
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+
+  .testimoni .card-testimoni .testimoni-star
+  {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    height: auto;
+  }
+
+  .testimoni-star a{
+    max-width: 30px;
+    max-height: 30px;
+    color: var(--warning)
+  }
+
+
+  .card-testimoni p{
+    margin-top: 1rem;
+    line-height: 140%;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-dark);
+    width: 100%;
+    text-align: left;
+  }
+
+  
+  .container-testimoni {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+}  
+
+.card-testimoni .container-testimoni img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .card-testimoni .container-id {
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 3.1rem;
+  }
+
+
+  .container-testimoni .container-id h6{
+    margin: 0;
+    height: 25%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+  }
+
+  .container-testimoni .container-id p{
+    font-size: 14px;
+    margin-top: 8px;
+
+    font-weight: 400;
+    color: var(--gray-dark);
+  }
+
+
+
+    /* Artikel */
+
+    .artikel {
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1.4 rem 7%;
+        border-radius: 18px;
+        }
+    
+        .artikel-title {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    
+        .artikel-title  h4{
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--gray-dark);
+        }
+    
+        .artikel-title .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 198px;
+        height: 48px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--white);
+        transition: all 0.3s ease;
+        padding: 8px;
+        border: 1px solid var(--teal);
+        border-radius: 12px;
+        background-color: var(--teal);
+        cursor: pointer;
+        }
+
+
+        
+    .artikel-content {
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+
+        }
+
+    .artikel-content .card-artikel{
+
+        border: 1px rgba(0,0,0,0.2);
+        width: 540px;
+        height: 284px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 12px;
+        cursor: pointer;
+    
+        }
+    
+        .artikel-content .card-artikel .card-img {
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        padding: 0%;
+    
+        }
+    
+        .card-artikel .card-ket{
+            margin: 0;
+            padding: 1rem;
+        }
+       .artikel-content .card-artikel .judul{
+        width: 100%;
+        height: 7rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        overflow-y: hidden;
+        color: var(--gray-dark);
+    
+       }
+        .artikel-content .card-artikel .ket{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--teal);
+        margin: 0;
+       }
+    
+       .artikel-content .card-artikel .desc{
+        width: 100%;
+        overflow-y: hidden;
+        height: 3rem;
+        margin-top: 0.5rem;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--gray-dark);
+        margin: 0;
+       }
+
+
+
+    .lihat-semua {
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        margin-top: 16px;
+    
+      }
+    
+    .lihat-semua a{
+        margin-left: 12px;
+        color: var(--teal);
+        align-items: center;
+        text-align: center;
+        height: 1.5rem;
+      }
+    .lihat-semua p{
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--teal);
+      }
+    
+
+       .artikel .artikel-title .button:hover{
+        background: var(--white);
+        color: var(--teal);
+        transition: 0.3s;
+    }
+        .card-artikel:hover {
+        transition: 0.3s;
+        box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+      }
+
+      .card-artikel:hover .lihat-semua a,.card-artikel:hover .lihat-semua p{
+        color: var(--green);
+        transition: 0.3s;
+      }
+
+
+
+      
+
+    /* Form Daftar */
+/* 
+    .form-daftar {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+        border-radius: 12px;
+        background-color: var(--teal);
+
+    }
+
+    .form-daftar-title{
+        background-color: #17a2b8;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--white);
+    }
+
+    .form-daftar-title h4{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    .form-daftar-title p{
+        margin: 0;
+        margin-top: 16px;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .form-daftar-item {
+        background-color: #007bff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.5rem;
+        padding: 0;
+        
+    }
+    .pesan {
+        margin: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        width: 400px;
+        margin: 0;
+      }
+
+    .label{
+        font-size: 1rem;
+        text-align: left;
+        color: var(--white);
+    }
+      
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+    width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    }
+
+    .form-daftar-item .cek{
+        display:flex;
+        justify-content: center;
+        width: 35%;
+        height: auto;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .mate{
+        display: flex;
+        width: 400px;
+        height: 80px;
+    }
+
+    .mate label{
+        color: var(--white);
+        width: 400px;
+    }
+
+    label[for="check"] {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    }
+
+    #warning {
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: red;
+    visibility: hidden;
+    }
+
+    .bt {
+        margin: 0;
+        display: flex;
+        width: 198px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--teal);
+        transition: all 0.3s ease;
+        border: 1.5px solid var(--teal);
+        border-radius: 12px;
+        padding:8px;
+        background-color: var(--white);
+        cursor: pointer;
+    }
+    .bt:hover{
+    background: var(--teal);
+    color: var(--white);
+    transition: 0.3s;
+    border: 1.5px solid var(--white);
+
+
+    } */
+
+
+/* Daftar */
+
+.daftar{
+    margin-top: 120px;
+    height: 394px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(59, 183, 143, 0.12);
+    ;
+}
+
+.daftar-title{
+    text-align: center;
+    width: 865px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--gray-dark);
+}
+
+.daftar form{
+    background-color: white;
+    border-radius: 12px;
+    padding: 21px 24px;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.daftar form input{
+    margin-right: 124px;
+}
+.daftar form button{
+    padding: 8px;
+    border-radius: 12px;
+    width: 164px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+
+    /* Footer */
+.footer-section{
+    position: relative;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+}
+
+.footer-section .company{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+
+}
+
+.company .img{
+    padding: 3px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: var(--white);
+}
+
+.company .company-item{
+    margin-top: 1rem;
+    width: 50%;
+    color: var(--gray-dark);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-section .about{
+    display:flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 50%;
+
+}
+
+.about .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-dark);
+}
+
+.about .fitur {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    height: 100%;
+    border-bottom: 2px;
+}
+
+.about .fitur-item {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about .fitur-item a{
+    color: var(--gray-dark);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.copyright p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 767px) {
+ 
+    
+body{
+    padding: 0 1rem;
+}
+
+body a{
+    font-size: 14px;
+}
+
+  
+/* Hero */
+.hero{
+    background-color: #007bff;
+    padding: 1rem;
+    width: 100%;
+}
+
+.hero .hero-content{
+}
+
+.hero-content h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.hero-content h6{
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+
+.hero-content .hero-action-item{
+    font-size: 10px;
+    font-weight: 600;
+    width: 128px;
+    height: 28px;
+    margin-top: 1rem;
+}
+
+.hero-content .hero-action-item:hover{
+    background: var(--teal);
+    color: var(--white);
+}
+
+
+.copyright{
+    display: none;
+}
+
+/* Daftar Penyakit */
+ 
+.penyakit{
+    margin-top: 80px;
+}
+
+.penyakit .penyakit-content{
+    margin-bottom: 1.5rem;
+    height: 2rem;
+
+}
+
+.penyakit .penyakit-content h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.penyakit .penyakit-content .button{
+    font-size: 10px;
+    width: 128px;
+    height: 28px;
+}
+
+.daftar-penyakit
+{
+    gap: 8px;
+
+}
+
+.penyakit .daftar-penyakit .penyakit-item{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.penyakit .daftar-penyakit .penyakit-item .penyakit-item-content{
+   align-items: center;
+    width: 70px;
+    height: 70px;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+
+.penyakit-item-content .gambar-penyakit{
+    
+    margin-bottom: 8px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.penyakit-item-content .penyakit-item-title{
+    font-size: 8px;
+    font-weight: 600;
+    color: var(--gray-dark);
+    
+}
+
+.penyakit-item-content:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    transition: all 0.3s ease;
+
+}
+
+.dokter-rekomendasi{
+    display: none;
+}
+
+
+.footer-section{
+display: none;
+}
+
+.daftar-testimoni{
+    display: none;
+}
+
+.artikel{
+    display: none;
+}
+
+.navbar{
+    display: none;
+}
+
+.form-daftar{
+    display: none;
+}
+
+
+}
+
+
