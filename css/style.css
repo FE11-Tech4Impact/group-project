@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 :root{
     --primary-color: #000;
     --bg: #fff;
@@ -23,7 +24,6 @@
     --dark: #343a40;
 
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -33,11 +33,8 @@
     text-decoration: none;
 }
 
-body{
-    background: var(--bg);
-    font-family: 'Inter', sans-serif;
-    color: solid black;
-    padding: 0 7.5rem;
+.body{
+    margin: 0 120px;
 }
 
 body a{
@@ -47,6 +44,10 @@ body a{
 
 
 /* Navbar */
+.navbar{
+    margin: 0 120px;
+
+}
 
 .navbar-action-item
 {
@@ -108,75 +109,92 @@ body a{
     transition: 0.3s ease;
 }
 
-/* Register */
-.form-daftar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 88px;
-}
+/* End Navbar */
 
 
-.form-daftar h3{
-    font-size: 24px;
-    color: #121212;
-    font-weight: 700;
-    margin-bottom: 24px;
-    text-align: left;
-}
 
-.form-control{
-    height: 40px;
-}
-
-/* Login */
-
-.form-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-}
-
-.form-control{
-    height: 40px;
-}
-
-.form-login h3{
-    font-size: 24px;
-    color: #121212;
-    font-weight: 700;
-    margin-bottom: 24px;
-    text-align: left;
-}
-
-.button-form{
-    width: 100%;
-    height: 40px;
-    background-color: #00A376;
-    border: none;
-    border-radius: 12px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.btn-social{
-    margin: 4px 0;
-    width: 100%;
-    height: 40px;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-social img{
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-
-/* End Login */
+    /* Footer */
+    .footer-section{
+      position: relative;
+      margin-top: 120px;
+      display: flex;
+      justify-content: space-between;
+      height: 20rem;
+      margin: 0 120px;
+  }
+  
+  .footer-section .company{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 50%;
+      height: 50%;
+  
+  }
+  
+  .company .img{
+      padding: 3px;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background-color: var(--white);
+  }
+  
+  .company .company-item{
+      margin-top: 1rem;
+      width: 50%;
+      color: var(--gray-dark);
+      font-size: 14px;
+      font-weight: 400;
+  }
+  
+  .footer-section .about{
+      display:flex;
+      justify-content: flex-end;
+      width: 50%;
+      height: 50%;
+  
+  }
+  
+  .about .title{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gray-dark);
+  }
+  
+  .about .fitur {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 30%;
+      height: 100%;
+      border-bottom: 2px;
+  }
+  
+  .about .fitur-item {
+      margin-top: 1.5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .about .fitur-item a{
+      color: var(--gray-dark);
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 10px;
+      text-decoration: none;
+  }
+  
+  .copyright{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+  }
+  
+  .copyright p{
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--gray);
+  }
+  
