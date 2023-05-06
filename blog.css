@@ -44,6 +44,10 @@ body a{
 
 
 /* Navbar */
+.navbar{
+    margin: 0 120px;
+
+}
 
 .navbar-action-item
 {
