@@ -1,10 +1,12 @@
 const blogPostsContainer = document.getElementById("blog-posts");
 const loadMoreButton = document.getElementById("load-more-btn");
+const articleContainer = document.getElementById("article-container");
+
 
 let currentPage = 1;
 let postsPerPage = 6;
 
-function displayBlogPosts(posts, container, page) {
+function displayBlogPosts(posts, container, page, articleId) {
   const start = postsPerPage * (page - 1);
   const end = start + postsPerPage;
   const paginatedPosts = posts.slice(start, end);
@@ -18,7 +20,7 @@ function displayBlogPosts(posts, container, page) {
         <div class="card-body px-0">
           <h5 class="card-title">${post.title.length > 65 ? post.title.slice(0, 65) + '...' : post.title}</h5>
           <p class="card-text mt-3">${post.text.length > 80 ? post.text.slice(0, 80) + '...' : post.text}</p>
-          <button class="btn btn-outline-primary">Lihat Selengkapnya</button>
+          <a href="${getArticleUrl(post.id)}" class="btn btn-outline-primary">Lihat Selengkapnya</a>
         </div>
       </div>
     `;
@@ -26,11 +28,15 @@ function displayBlogPosts(posts, container, page) {
   });
 }
 
-function fetchBlogPosts(page) {
+function getArticleUrl(articleId) {
+  return `article.html?id=${articleId}`;
+}
+
+function fetchBlogPosts(page, articleId) {
   fetch(`https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts?page=${page}`)
     .then(response => response.json())
     .then(data => {
-      displayBlogPosts(data, blogPostsContainer, currentPage);
+      displayBlogPosts(data, blogPostsContainer, currentPage, articleId);
       if (data.length < postsPerPage) {
         loadMoreButton.style.display = "none";
       }
@@ -61,3 +67,28 @@ loadMoreButton.addEventListener("click", function (event) {
 // Menambahkan event listener pada saat ukuran layar browser berubah untuk mengatur ulang jumlah postingan yang ditampilkan
 window.addEventListener("resize", setPostsPerPage);
 
+
+function displayArticle(article) {
+    const articleElement = document.createElement("div");
+    articleElement.innerHTML = `
+      <h2 class="card-title">${article.title}</h2>
+      <img src="${post.image}" class="card-img-top" alt="${post.title}">
+            <p class="card-text">${article.text}</p>
+    `;
+    articleContainer.appendChild(articleElement);
+  }
+  
+  function fetchArticle() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get('id');
+  
+    fetch(`https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts/${articleId}`)
+      .then(response => response.json())
+      .then(data => {
+        displayArticle(data);
+      })
+      .catch(error => console.log(error));
+  }
+  
+  fetchArticle();
+  
