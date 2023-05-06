@@ -43,8 +43,9 @@ function onClickGet(result) {
 function parseResponse(responseJSON, email, password) {
     for (let i=0; i<responseJSON.length; i++) {
         if (responseJSON[i].email == email && responseJSON[i].password == password) {
-            window.location = 'index.html';
+            window.location.replace('index.html');
         }
     }
-    return "Login Failed"
+   
+
 }
