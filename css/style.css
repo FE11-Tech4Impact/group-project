@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root{
+    --primary-color: #000;
+    --bg: #fff;
+    --blue: #007bff; 
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #077252;
+    --teal: #29b27f;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #070717;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa; 
+    --dark: #343a40;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.body{
+    margin: 0 120px;
+}
+
+body a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+/* Navbar */
+.navbar{
+    margin: 0 120px;
+
+}
+
+.navbar-action-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 144px;
+    height: 48px;
+    margin: 0 1rem;
+    font-weight: 600;
+    color: var(--teal);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.navbar-action-item:hover{
+    color: var(--teal);
+    border-color: var(--green);
+}
+.btn-primary
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 48px;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0;
+    font-weight: 600;
+    background-color: var(--teal);
+    color: var(--white);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid var(--teal);
+    text-decoration: none;
+}
+
+.btn-primary:hover{
+    border: 2px solid var(--green);
+    background-color: var(--green);
+}
+
+.icon-menu{
+    display: flex;
+    margin: 0 0.8rem;
+    align-items: center;
+    transition: 0.3s ease;
+    color: var(--gray-dark);
+}
+
+.icon-menu:hover{
+    color: var(--teal);
+    transition: 0.3s ease;
+}
+
+/* End Navbar */
+
+
+
+    /* Footer */
+    .footer-section{
+      position: relative;
+      margin-top: 120px;
+      display: flex;
+      justify-content: space-between;
+      height: 20rem;
+      margin: 0 120px;
+  }
+  
+  .footer-section .company{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 50%;
+      height: 50%;
+  
+  }
+  
+  .company .img{
+      padding: 3px;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background-color: var(--white);
+  }
+  
+  .company .company-item{
+      margin-top: 1rem;
+      width: 50%;
+      color: var(--gray-dark);
+      font-size: 14px;
+      font-weight: 400;
+  }
+  
+  .footer-section .about{
+      display:flex;
+      justify-content: flex-end;
+      width: 50%;
+      height: 50%;
+  
+  }
+  
+  .about .title{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gray-dark);
+  }
+  
+  .about .fitur {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 30%;
+      height: 100%;
+      border-bottom: 2px;
+  }
+  
+  .about .fitur-item {
+      margin-top: 1.5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .about .fitur-item a{
+      color: var(--gray-dark);
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 10px;
+      text-decoration: none;
+  }
+  
+  .copyright{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+  }
+  
+  .copyright p{
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--gray);
+  }
+  
