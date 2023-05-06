@@ -33,11 +33,8 @@
     text-decoration: none;
 }
 
-body{
-    background: var(--bg);
-    font-family: 'Inter', sans-serif;
-    color: solid black;
-    padding: 0 7.5rem;
+.body{
+    margin: 0 120px;
 }
 
 body a{
@@ -157,6 +154,7 @@ body a{
         display: flex;
         justify-content: space-between;
         height: 20rem;
+        margin: 0 120px;
     }
     
     .footer-section .company{
