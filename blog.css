@@ -309,11 +309,11 @@ body a{
     /* Footer */
 .footer-section{
     position: relative;
-      margin: 0 40px;
-    top: 13rem;
+      margin: 40px;
+    
     display: flex;
     justify-content: space-between;
-    height: 6rem;
+   
 }
 
 .footer-section .company{
