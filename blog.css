@@ -37,7 +37,7 @@ body{
     background: var(--bg);
     font-family: 'Inter', sans-serif;
     color: solid black;
-    padding: 0 7.5rem;
+    margin: 0 120px;
 }
 
 body a{
