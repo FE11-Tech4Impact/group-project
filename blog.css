@@ -303,12 +303,8 @@ body a{
     margin: 0 auto;
     text-align: center;
     }
-}
-
-
-
-
-/* Navbar */
+    
+    /* Navbar */
 
 #menu{
     margin-right: 2rem;
@@ -332,5 +328,4 @@ body a{
     display: inline-block;
     position: absolute;
 
-}
 }
