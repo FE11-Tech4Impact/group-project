@@ -37,7 +37,7 @@ body{
     background: var(--bg);
     font-family: 'Inter', sans-serif;
     color: solid black;
-    margin: 0 120px;
+    padding: 0 7.5rem;
 }
 
 body a{
@@ -67,6 +67,51 @@ body a{
 
 }
 
+.navbar-info{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-title{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--teal);
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+.navbar-info-title{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0.2rem 1rem;
+
+}
+
+.navbar-info-name{
+    font-weight: 700;
+    color: var(--teal);
+    margin:0.2rem;
+}
+
+.exit{
+    margin: 0;
+    margin: 0.2rem 0;
+    margin-right: 0.2rem;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--danger);
+}
+
+.exit:hover{
+    color: var(--red);
+    transition: 0.3s ease;
+}
 .navbar-action-item:hover{
     color: var(--teal);
     border-color: var(--green);
@@ -108,6 +153,20 @@ body a{
     transition: 0.3s ease;
 }
 
+#menu{
+    display: none;
+}
+#burger{
+    display: none;
+}
+
+#search-menu{
+    display: none;
+}
+
+#cart-menu{
+    display: none;
+}
 
 
 #carouselExampleSlidesOnly {
