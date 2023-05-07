@@ -80,8 +80,8 @@ fetch(`https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts/${articleId}`)
     articleImage.alt = data.title;
 
     const articleContent = document.getElementById("article-text");
-    if (data.content) {
-      articleContent.innerHTML = data.content;
+    if (data.text) {
+      articleContent.innerHTML = data.text;
     } else {
       articleContent.textContent = "Informasi artikel tidak tersedia.";
     }
