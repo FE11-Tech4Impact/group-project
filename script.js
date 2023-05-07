@@ -1,3 +1,6 @@
+// const artikelId = document.getElementById('read-more');
+
+// const it=""
 fetch('https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts')
 .then(response => response.json())
 .then(data => {
@@ -8,14 +11,23 @@ fetch('https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts')
         const textId= 'text' + (index + 1);
         const imgId= 'img' + (index + 1);
         const catId= 'category' + (index + 1);
+        const idt= item.id;
+        const ititle = item.title;
+        const itext = item.text;
 
-        document.getElementById(titleId).innerHTML =item.title;
-        document.getElementById(textId).innerHTML =item.text;
+        document.getElementById(titleId).innerHTML =ititle;
+        document.getElementById(textId).innerHTML =itext;
         document.getElementById(imgId).src = item.image;
         document.getElementById(catId).innerHTML = item.category;
-    }
-    )
 
+        // console,log(idt);
+        // artikelId.addEventListener('click', function(e) {
+        //   e.preventDefault();
+        //   localStorage.setItem("idArtikel", JSON.stringify({ idt }));
+        //   console.log(idt);
+        // })
+  
+    })
 
 
 })
@@ -32,11 +44,38 @@ fetch('https://64527770a2860c9ed40d2a69.mockapi.io/doctor')
         const jobId= 'job' + (index + 1);
         const priceId= 'price' + (index + 1);
 
+        const iprice = item.price;
+
         document.getElementById(namaId).innerHTML = 'dr.'+ item.name;
         document.getElementById(umurId).innerHTML = item.experience + ' Tahun';
         document.getElementById(jobId).innerHTML = item.job;
-        document.getElementById(priceId).innerHTML = 'Rp.' + item.price * 1000;
+        document.getElementById(priceId).innerHTML = 'Rp. ' + iprice.toLocaleString('id-ID');
     }
     )
 })
 .catch(error => console.log(error))
+
+
+
+
+// login
+
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // cek apakah username dan password benar
+  if (username === "user" && password === "pass") {
+    // simpan data user ke local storage
+    localStorage.setItem("loggedInUser", JSON.stringify({ username }));
+
+    // redirect ke homepage
+    window.location.href = "index.html";
+  } else {
+    alert("Username atau password salah!");
+  }
+});
