@@ -55,7 +55,7 @@
     <div class="col-md-8 offset-md-2">
       <h2 id="article-title"></h2>
       <img src="" alt="" class="img-fluid mb-3" id="article-image">
-      <div id="article-content"></div>
+      <div id="article-text"></div>
     </div>
   </div>
 </div>
@@ -68,7 +68,7 @@
   const articleId = urlParams.get("id");
 
   // Memuat data artikel dari API
-fetch(`https://64555e30f803f34576416527.mockapi.io/article/${articleId}`)
+fetch(`https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts/${articleId}`)
   .then(response => response.json())
   .then(data => {
     // Menampilkan informasi artikel pada halaman
@@ -79,7 +79,7 @@ fetch(`https://64555e30f803f34576416527.mockapi.io/article/${articleId}`)
     articleImage.src = data.image;
     articleImage.alt = data.title;
 
-    const articleContent = document.getElementById("article-content");
+    const articleContent = document.getElementById("article-text");
     if (data.content) {
       articleContent.innerHTML = data.content;
     } else {
