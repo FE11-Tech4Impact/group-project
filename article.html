@@ -49,12 +49,46 @@
   <!-- End Navbar -->
    
 
-        <!-- Page content-->
-        <div class="container">
-          <div id="article-container"></div>
-        </div>
-                <!-- END -->
-                
+              <!-- Main Content -->
+<div class="container-article">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h2 id="article-title"></h2>
+      <img src="" alt="" class="img-fluid mb-3" id="article-image">
+      <div id="article-content"></div>
+    </div>
+  </div>
+</div>
+<!-- End Main Content -->
+
+
+<script>
+  // Mendapatkan ID artikel dari URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const articleId = urlParams.get("id");
+
+  // Memuat data artikel dari API
+fetch(`https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts/${articleId}`)
+  .then(response => response.json())
+  .then(data => {
+    // Menampilkan informasi artikel pada halaman
+    const articleTitle = document.getElementById("article-title");
+    articleTitle.textContent = data.title;
+
+    const articleImage = document.getElementById("article-image");
+    articleImage.src = data.image;
+    articleImage.alt = data.title;
+
+    const articleContent = document.getElementById("article-content");
+    if (data.content) {
+      articleContent.innerHTML = data.content;
+    } else {
+      articleContent.textContent = "Informasi artikel tidak tersedia.";
+    }
+  })
+  .catch(error => console.log(error));
+
+</script>
        
       <!-- footer -->
       <footer class="footer-section">
