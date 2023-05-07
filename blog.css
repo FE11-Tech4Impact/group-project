@@ -309,7 +309,7 @@ body a{
     /* Footer */
 .footer-section{
     position: relative;
-    margin-top: 2rem;
+      margin: 0 40px;
     top: 13rem;
     display: flex;
     justify-content: space-between;
