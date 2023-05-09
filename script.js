@@ -11,7 +11,7 @@ fetch('https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts')
         const textId= 'text' + (index + 1);
         const imgId= 'img' + (index + 1);
         const catId= 'category' + (index + 1);
-        const idt= item.id;
+        const readId= 'read-more' + (index + 1);
         const ititle = item.title;
         const itext = item.text;
 
@@ -19,15 +19,10 @@ fetch('https://64527375bce0b0a0f7475dda.mockapi.io/blog-posts')
         document.getElementById(textId).innerHTML =itext;
         document.getElementById(imgId).src = item.image;
         document.getElementById(catId).innerHTML = item.category;
-
-        // console,log(idt);
-        // artikelId.addEventListener('click', function(e) {
-        //   e.preventDefault();
-        //   localStorage.setItem("idArtikel", JSON.stringify({ idt }));
-        //   console.log(idt);
-        // })
+        document.getElementById(readId).href = `article.html?id=${item.id}`;
   
     })
+
 
 
 })

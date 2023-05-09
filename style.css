@@ -48,6 +48,10 @@ body a{
 
 /* Navbar */
 
+
+.navbar-collapse{
+    z-index: 9999;
+}
 .navbar-action-item
 {
     display: flex;
@@ -116,6 +120,7 @@ body a{
     color: var(--teal);
     border-color: var(--green);
 }
+
 .btn-primary
 {
     display: flex;
@@ -168,17 +173,9 @@ body a{
     display: none;
 }
 
-/* .collapse{
-    position: relative;
-}
 .sidebar{
-    background-color: #007bff;
-    position: absolute; 
-    top: 3rem;
-    left: 0;
-    width: 6rem;
-} */
-
+    display: none;
+}
 /* Hero Image */
 
 .hero{
@@ -734,102 +731,110 @@ body a{
 
         }
 
-    .artikel-content .card-artikel{
+        .artikel-content .card-artikel{
 
-        border: 1px rgba(0,0,0,0.2);
-        width: 540px;
-        height: 284px;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 12px;
-        cursor: pointer;
-    
-        }
-    
-        .artikel-content .card-artikel .card-img {
-        background-size: cover;
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12px;
-        padding: 0%;
-    
-        }
-    
-        .card-artikel .card-ket{
+            border: 1px rgba(0,0,0,0.2);
+            width: 540px;
+            height: 290px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 12px;
+            cursor: pointer;
+        
+            }
+        
+            .artikel-content .card-artikel .card-img {
+            background-size: cover;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            padding: 0%;
+        
+            }
+        
+            .card-artikel .card-ket{
+                margin: 0;
+                padding: 1rem;
+            }
+           .artikel-content .card-artikel .judul{
+            width: 100%;
+            height: 7rem;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-weight: 700;
+            overflow-y: hidden;
+            color: var(--gray-dark);
+        
+           }
+            .artikel-content .card-artikel .ket{
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--teal);
             margin: 0;
-            padding: 1rem;
+           }
+        
+           .artikel-content .card-artikel .desc{
+            width: 100%;
+            overflow-y: hidden;
+            height: 3rem;
+            margin-top: 0.5rem;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--gray-dark);
+            margin: 0;
+           }
+    
+    
+    
+        .lihat-semua {
+            display: flex;
+            justify-content: flex-start;
+            width: 80%;
+            height: auto;
+            align-items: center;
+            margin-top: 16px;
+        
+          }
+        
+        .lihat-semua a{
+            margin-left: 12px;
+            color: var(--teal);
+            align-items: center;
+            text-align: center;
+            height: 1.5rem;
+          }
+        .lihat-semua p{
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--teal);
+          }
+        
+          .lihat-semua .red{
+            display: flex;
+            align-items: center;
+            height: 2rem;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--teal);
+          }
+           .artikel .artikel-title .button:hover{
+            background: var(--white);
+            color: var(--teal);
+            transition: 0.3s;
         }
-       .artikel-content .card-artikel .judul{
-        width: 100%;
-        height: 7rem;
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        font-weight: 700;
-        overflow-y: hidden;
-        color: var(--gray-dark);
+            .card-artikel:hover {
+            transition: 0.3s;
+            box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+          }
     
-       }
-        .artikel-content .card-artikel .ket{
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--teal);
-        margin: 0;
-       }
+          .card-artikel:hover .lihat-semua a,.card-artikel:hover .lihat-semua p{
+            color: var(--green);
+            transition: 0.3s;
+          }
     
-       .artikel-content .card-artikel .desc{
-        width: 100%;
-        overflow-y: hidden;
-        height: 3rem;
-        margin-top: 0.5rem;
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--gray-dark);
-        margin: 0;
-       }
-
-
-
-    .lihat-semua {
-        display: flex;
-        justify-content: flex-start;
-        width: 80%;
-        height: auto;
-        align-items: center;
-        margin-top: 16px;
-    
-      }
-    
-    .lihat-semua a{
-        margin-left: 12px;
-        color: var(--teal);
-        align-items: center;
-        text-align: center;
-        height: 1.5rem;
-      }
-    .lihat-semua p{
-        margin: 0;
-        font-size: 14px;
-        font-weight: 700;
-        color: var(--teal);
-      }
-    
-
-       .artikel .artikel-title .button:hover{
-        background: var(--white);
-        color: var(--teal);
-        transition: 0.3s;
-    }
-        .card-artikel:hover {
-        transition: 0.3s;
-        box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
-      }
-
-      .card-artikel:hover .lihat-semua a,.card-artikel:hover .lihat-semua p{
-        color: var(--green);
-        transition: 0.3s;
-      }
-
 
 
       
@@ -1116,6 +1121,7 @@ body a{
     
 body{
     padding: 0 1rem;
+    overflow-x: hidden;
 }
 
 body a{
@@ -1128,6 +1134,7 @@ body a{
     background-color: #6283a7;
     padding:0.5rem;
     width: 100%;
+    height: 9rem;
 }
 
 
@@ -1505,7 +1512,7 @@ body a{
         text-align: center;
         height: 1.5rem;
       }
-    .lihat-semua p{
+    .lihat-semua .red{
         margin: 0;
         font-size: 8px;
         font-weight: 700;
@@ -1650,11 +1657,104 @@ body a{
     display: inline-block;
 }
 
-.navbar-nav{
-    display: inline-block;
-    position: absolute;
 
-    background-color: #007bff;
+.sidebar{
+    display: inline-block;
+    width: 25vh;
+    right: -100vh;
+    top: 4rem;
+    position: absolute;
+    background-color: #ffffff;
+    height: 45vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item-side{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0.5rem ;
+}
+
+.nav-link{
+    font-size: 10px;
+
+}
+.btn-primary
+{
+    margin: 0;
+    font-size: 10px;
+    width: 128px;
+    height: 28px;
+}
+
+.navbar-action-item
+{
+    margin: 0;
+
+    font-size: 10px;
+    width: 128px;
+    height: 28px;
+}
+
+.exit{
+    margin: 0;
+    margin: 0.2rem 0;
+    margin-right: 0.2rem;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--danger);
+}
+
+.side-info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+.info-title{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--teal);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0;
+}
+.navbar-info-title{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+
+}
+
+.navbar-info-name{
+    font-weight: 700;
+    color: var(--teal);
+    margin:0;
+}
+
+#close{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.show{
+    right: 0;
+    transition: 0.4s ease-in-out;
 }
 }
 
