@@ -1664,12 +1664,12 @@ body a{
 
 .sidebar{
     display: inline-block;
-    width: 25vh;
+    width: 30vh;
     right: -100vh;
     top: 4rem;
     position: absolute;
     background-color: #ffffff;
-    height: 45vh;
+    height: 48vh;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -1685,7 +1685,7 @@ body a{
 }
 
 .nav-link{
-    font-size: 10px;
+    font-size: 14px;
 
 }
 .btn-primary
@@ -1700,7 +1700,7 @@ body a{
 {
     margin: 0;
 
-    font-size: 10px;
+    font-size: 14px;
     width: 128px;
     height: 28px;
 }
@@ -1711,7 +1711,7 @@ body a{
     margin-right: 0.2rem;
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--danger);
 }
@@ -1739,7 +1739,7 @@ body a{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: 14px;
 
 }
 
