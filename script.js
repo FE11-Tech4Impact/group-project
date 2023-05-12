@@ -50,27 +50,3 @@ fetch('https://64527770a2860c9ed40d2a69.mockapi.io/doctor')
 })
 .catch(error => console.log(error))
 
-
-
-
-// login
-
-const loginForm = document.getElementById("loginForm");
-
-loginForm.addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-
-  // cek apakah username dan password benar
-  if (username === "user" && password === "pass") {
-    // simpan data user ke local storage
-    localStorage.setItem("loggedInUser", JSON.stringify({ username }));
-
-    // redirect ke homepage
-    window.location.href = "index.html";
-  } else {
-    alert("Username atau password salah!");
-  }
-});
